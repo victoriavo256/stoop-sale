@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(212, 189, 167);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: none;
+}
