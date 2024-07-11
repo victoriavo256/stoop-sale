@@ -12,6 +12,50 @@ body {
     display: none;
 }
 
-button {
-    background-color: none;
+/*************** style rules for starting screen (before clicking the envelope) ***************/
+@keyframes idleShake {
+    0%  { transform: rotate(0deg); }
+    25% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+
+#closed-envelope {
+    background: none;
+    border: none;
+    cursor: pointer;
+    animation: idleShake 1s infinite;
+}
+
+@keyframes openEnvelope {
+    0% { transform: scale(0.8); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1.0); }
+}
+
+#opened-envelope {
+    animation: openEnvelope 1s;
+}
+
+@keyframes zoomOutFromCenter {
+    0% { transform: scale(0);
+         opacity: 0; }
+    100% { transform: scale(1);
+         opacity: 1; }
+}
+
+#pop-out-from-envelope {
+    animation: zoomOutFromCenter 2s;
+}
+
+/* TODO: fix fadeaway animation, bc rn it's just going from 0 to 100...*/
+@keyframes fadeAway {
+    0% { opacity: 1 }
+    50% { opacity: 0.5 }
+    100% { opacity: 0 }
+}
+
+.hide {
+    animation: fadeAway 1s;
 }
