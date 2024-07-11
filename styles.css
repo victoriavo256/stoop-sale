@@ -24,6 +24,12 @@ button {
     display: none;
 }
 
+/*************** style rule for google map API ***************/
+
+gmp-map {
+    height: 100%;
+}
+
 /*************** style rules for starting screen (before clicking the envelope) ***************/
 @keyframes idleShake {
     0%  { transform: rotate(0deg); }
