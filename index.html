@@ -4,21 +4,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>✨Stoop Sale✨</title>
     <link href="styles.css" rel="stylesheet" />
+    <script async src="https://maps.googleapis.com/maps/api/js?key=GOOGLE_MAPS_API_KEY&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
 </head>
 <body>
-    <!--before clicking to open the envelope-->
-    <button id="closed-envelope"><img src="images/envelope-closed.png" width="150"></button>
+    <div id="envelopes">
+        <!--before clicking to open the envelope-->
+        <button id="closed-envelope"><img src="images/envelope-closed.png" width="150"></button>
 
-    <!--after clicking to open the envelope (info fills the page)-->
-    <img src="images/envelope-opened.png" width="150" id="opened-envelope" class="hidden">
+        <!--after clicking to open the envelope (info fills the page)-->
+        <img src="images/envelope-opened.png" width="150" id="opened-envelope" class="hidden">
+    </div>
+    
     <div id="pop-out-from-envelope" class="hidden">
         <h4>You are invited to</h4>
         <h2>Chelsea & Lil's</h2>
-        <h1>Stoop Sale</h1>
-        <img src="images/stoop.png">
-    </div>
+        <h1>Stoop Sale<button id="help-button">?</button></h1>
+        <div id="stoop-graphic"></div>
     </div>
 
+    <!--fadeInView means these elements fade in as they come into range of the view port-->
+    <div id="scroll-down-to-see" class="hidden">
+        <p class="fadeInViewPort">August 25th, 2024 at 9am-12pm</p>
+        <p class="fadeInViewPort">Street Address here</p>
+
+        <!--Google Maps API!-->
+        <gmp-map center="40.67951583862305,-73.9972915649414" zoom="14" map-id="DEMO_MAP_ID">
+            <gmp-advanced-marker position="40.67951583862305,-73.9972915649414" title="My location"></gmp-advanced-marker>
+        </gmp-map>
+        
+        <p class="fadeInViewPort">Interactive Collage here</p>
+        <p class="fadeInViewPort">Share to Socials here</p>
+        <p class="fadeInViewPort">Hope to see you there! xo Chelsea & Lil</p>
+    </div>
+    
     <script src="script.js"></script>
 </body>
 </html>

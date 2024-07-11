@@ -23,5 +23,29 @@ envelopeButton.addEventListener("click", () => {
 
         // ...show other text + images popping out from where the envelope was
         document.getElementById("pop-out-from-envelope").classList.remove('hidden')
-    }, 1000)
+        
+        // makes all other elements visible (no special popping out animation)
+        document.getElementById("scroll-down-to-see").classList.remove('hidden')
+    }, 1500)
+
+});
+
+
+
+// when the question mark symbol next to Stoop Sale is hovered over,
+// a window pops up that defines what a stoop sale is **TODO**
+
+helpButton = document.getElementById("help-button");
+
+helpButton.addEventListener("click", () => {
+    
+    helpWindow = document.getElementById("help-window");
+});
+
+
+
+// as the user scrolls down, elements with the "fadeInViewPort" class will fade in
+// one by one as they come into view **TODO**
+
+document.addEventListener("DOMContentLoaded", function() {
 });
