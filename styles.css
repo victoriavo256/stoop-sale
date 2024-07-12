@@ -208,6 +208,8 @@ button {
     height: 500px;
     animation: stoopGraphicAnimation 3s steps(1,end) infinite;
     margin: 0 auto; /* center horizontally */
+    background-repeat: no-repeat; 
+    background-size: cover;
 }
 
 /*************** style rules for social media buttons ***************/
