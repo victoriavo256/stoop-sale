@@ -111,7 +111,6 @@ button {
 
 #opened-envelope {
     animation: openEnvelope 1s;
-    max-width: 100%;
 }
 
 .hide {
@@ -128,8 +127,7 @@ button {
 }
 
 #help-window {
-    width: 80%; /*40px*/
-    max-width: 400px;
+    width: 400px;
     height: 30px;
     background-color: white;
     border: 3px black solid;
@@ -167,8 +165,7 @@ button {
 }
 
 #stoop-graphic {
-    width: 80%; /*500px*/
-    max-width: 500px;
+    width: 500px;
     height: 500px;
     animation: stoopGraphicAnimation 3s steps(1,end) infinite;
 }
@@ -178,31 +175,5 @@ button {
 #sharelink {
     border: none;
     background: none;
-}
-
-/*************** style rules for website responsiveness ***************/
-
-@media (max-width: 768px) {
-    /* adjusts styles for tablets and smaller screens */
-    #help-window {
-        width: 90%; /* increase width percentage */
-    }
-
-    #stoop-graphic {
-        width: 90%; /* increase width percentage */
-    }
-}
-
-@media (max-width: 480px) {
-    /* Adjust styles for phones */
-    #help-window {
-        width: 100%; /* full width on smaller screens */
-        max-width: none; /* removes max-width limit */
-    }
-
-    #stoop-graphic {
-        width: 100%; /* full width on smaller screens */
-        max-width: none; /* removes max-width limit */
-    }
 }
 
