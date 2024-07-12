@@ -1,4 +1,7 @@
 body {
+    background-image: url('images/paper-bg.jpg');
+    background-repeat: repeat;
+    background-size: auto;
     background-color: #d4bda7;
     display: flex;
     flex-direction: column;
@@ -7,6 +10,36 @@ body {
     margin: 0;
     text-align: center;
 }
+
+p {
+    font-family: Awelier, serif;
+    font-size: 25px;
+}
+
+h1 {
+    font-family: Golden-State-Bold, serif;
+    font-size: 70px;
+}
+
+h2 {
+    font-family: Golden-State, serif;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+h3 {
+    font-family: Quaylike, serif;
+    font-size: 25px;
+    margin: 1;
+    padding: 1;
+}
+
+iframe {
+    width: 75%;
+    height: 25%
+}
+
 
 #envelopes {
     display: flex;
@@ -40,13 +73,22 @@ button {
     font-style: normal;
 }
 
-/*************** style rule for google map API ***************/
+@font-face {
+    font-family: 'Golden-State-Bold';
+    src: url('fonts/GoldenStateSerifPERSONAL-BoldItalic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-/*gmp-map {
-    height: 100%;
-}*/
+@font-face {
+    font-family: 'Awelier';
+    src: url('fonts/MADEAwelierPERSONALUSE-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 /*************** style rules for starting screen (before clicking the envelope) ***************/
+
 @keyframes idleShake {
     0%  { transform: rotate(0deg); }
     25% { transform: rotate(-10deg); }
@@ -78,6 +120,21 @@ button {
 
 /*************** style rules for main info screen (after clicking the envelope) ***************/
 
+#help-button {
+    border-radius: 25px;
+    border: 2px black solid;
+    background: white;
+}
+
+#help-window {
+    width: 400px;
+    height: 30px;
+    background-color: white;
+    border: 3px black solid;
+    position: absolute;
+    font-size: 20px;
+}
+
 @keyframes zoomOutFromCenter {
     0% { transform: scale(0);
          opacity: 0; }
@@ -87,6 +144,14 @@ button {
 
 #pop-out-from-envelope {
     animation: zoomOutFromCenter 2s;
+    position: relative;
+}
+
+#pop-out-from-envelope p,
+#pop-out-from-envelope h2,
+#pop-out-from-envelope h1 {
+    margin: -1; 
+    padding: -1;
 }
 
 @keyframes stoopGraphicAnimation {
@@ -97,5 +162,75 @@ button {
 #stoop-graphic {
     width: 500px;
     height: 500px;
-    animation: stoopGraphicAnimation 3s infinite;
+    animation: stoopGraphicAnimation 3s steps(1,end) infinite;
 }
+
+/*************** style rules for interactive collage ***************/
+
+#collage-container {
+    width: 80%;
+    height: 500px;
+    border: none;
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.collage-item {
+    position: absolute;
+    cursor: move;
+}
+
+#heels {
+    top: 50px;
+    left: 375px;
+}
+
+#sneakers {
+    top: 75px;
+    left: 190px;
+}
+
+#cooking-pot {
+    top: 75px;
+    left: 40px;
+
+}
+
+#shirt {
+    top: 150px;
+    left: 25px;
+}
+
+#shorts {
+    top: 120px;
+    left: 340px;
+}
+
+#russian-doll {
+    top: 235px;
+    left: 75px;
+}
+
+#ballerina {
+    top: 75px;
+    left: 165px;
+}
+
+#watch {
+    top: 50px;
+    left: 265px;
+}
+
+#pendant {
+    top: 50px;
+    left: 55px;
+}
+
+/*************** style rules for social media buttons ***************/
+
+#sharelink {
+    border: none;
+    background: none;
+}
+
