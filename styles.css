@@ -14,9 +14,9 @@ body {
 }
 
 @media (max-width: 768px) {
-    .your-element {
-        width: 100%; /* Adjust width for smaller screens */
-        max-width: 100%; /* Ensure it doesn't exceed the screen width */
+    .body {
+        width: 50%; /* Adjust width for smaller screens */
+        max-width: 50%; /* Ensure it doesn't exceed the screen width */
     }
 }
 
