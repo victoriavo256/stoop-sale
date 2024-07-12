@@ -1,3 +1,6 @@
+apiKey = process.env.GOOGLE_MAPS_API_KEY;
+console.log(apiKey);
+
 // when "closed envelope" image is clicked, "open envelope" image is revealed 
 // and text + images pop out to fill the screen with an invite to the stoop sale
 
