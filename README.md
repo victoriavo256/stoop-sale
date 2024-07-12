@@ -18,6 +18,7 @@ FEATURES ⭐
 
 💌 an interactive landing page that makes the website experience feel like opening a personal invitation
 🌏 an embedded interactive Google Maps image so you know exactly where to go
+⏰ a countdown timer to the date and time of the event
 🗣 5 social share URLs so you can invite your friends and spread the word about this event
 🎶 jazzy bgm from pixabay that sets the mood
 💻 some css animations to add extra visual interest, and also bc they're just fun to code
