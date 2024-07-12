@@ -210,6 +210,7 @@ button {
     margin: 0 auto; /* center horizontally */
     background-repeat: no-repeat; 
     background-size: cover;
+    background-position: center;
 }
 
 /*************** style rules for social media buttons ***************/
