@@ -1,4 +1,4 @@
-// when "closed envelope" image is clicked, "open envelope" image is revealed 
+// when "closed envelope" image is clicked, "open envelope" image is revealed  //////////////////////////
 // and text + images pop out to fill the screen with an invite to the stoop sale
 
 envelopeButton = document.getElementById("closed-envelope");
@@ -36,8 +36,8 @@ envelopeButton.addEventListener("click", () => {
 
 
 
-// when the question mark symbol next to Stoop Sale is hovered over,
-// a window pops up that defines what a stoop sale is **TODO**
+// when the question mark symbol next to Stoop Sale is hovered over, //////////////////////////////
+// a window pops up that defines what a stoop sale is
 
 helpButton = document.getElementById("help-button");
 
@@ -53,7 +53,42 @@ helpButton.addEventListener("click", () => {
 });
 
 
-// social media reshare buttons
+
+// setting up countdown //////////////////////////////////////////////////////////////////////////////
+// via this w3schools tutorial https://www.w3schools.com/howto/howto_js_countdown.asp 
+
+// end date
+var countDownDate = new Date("Aug 25, 2024 9:00:00").getTime();
+
+var x = setInterval(function() {
+
+    // today's date
+    var now = new Date().getTime();
+
+    // distance between end date and today's date
+    var distance = countDownDate - now;
+
+    // time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // display result in html element 'countdown'
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    // if the count down is finished, write some text
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "0d 0h 0m 0s<br><p><b>This event is over.</b></p>";
+    }
+
+}, 1000);   // countdown updates every second
+
+
+
+// social media reshare buttons ////////////////////////////////////////////////////////////////////////
 
 const pinterestBtn = document.getElementById('pinterest');
 const twitterxBtn = document.getElementById('twitterx');

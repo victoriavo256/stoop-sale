@@ -119,6 +119,13 @@ button {
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Blue-Cashews';
+    src: url('fonts/Blue_Cashews.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*************** style rules for starting screen (before clicking the envelope) ***************/
 
 #click-me {
@@ -176,6 +183,11 @@ button {
     text-align: center;
     padding: 0px;
     height: auto;
+}
+
+#countdown {
+    font-family: Blue-Cashew, Serif;
+    font-size: 50px;
 }
 
 @keyframes zoomOutFromCenter {
