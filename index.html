@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>✨Stoop Sale✨</title>
     <link href="styles.css" rel="stylesheet" />
-    <script async src="https://maps.googleapis.com/maps/api/js?key=process.env.GOOGLE_MAPS_API_KEY&callback=console.debug&libraries=maps,marker&v=beta"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=${process.env.YOUR_ENV_VARIABLE_NAME}&callback=console.debug&libraries=maps,marker&v=beta"></script>
 </head>
 <body>
     <div id="envelopes">
@@ -28,12 +28,9 @@
         <p class="fadeInViewPort">Street Address here</p>
 
         <!--Google Maps API!-->
-        <!--
         <gmp-map center="40.67951583862305,-73.9972915649414" zoom="14" map-id="DEMO_MAP_ID">
             <gmp-advanced-marker position="40.67951583862305,-73.9972915649414" title="My location"></gmp-advanced-marker>
         </gmp-map>
-        -->
-        <div id="map"></div>
 
         <p class="fadeInViewPort">Interactive Collage here</p>
         <p class="fadeInViewPort">Share to Socials here</p>
