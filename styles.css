@@ -17,6 +17,10 @@ body {
         width: 100% ;
         overflow-x: hidden;
     }
+    #stoop-graphic {
+        width:400px;
+        height:400px;
+    }
 }
 
 img {
@@ -189,10 +193,10 @@ button {
 }
 
 #stoop-graphic {
-    width: 100%; /*500px*/
-    max-width: 100%;
-    height: auto;
+    width: 500px;
+    height: 500px;
     animation: stoopGraphicAnimation 3s steps(1,end) infinite;
+    margin: 0 auto; /* center horizontally */
 }
 
 /*************** style rules for social media buttons ***************/
