@@ -9,44 +9,53 @@ body {
     height: 100vh;
     margin: 0;
     text-align: center;
-    width: 100%; 
-    max-width: 100%;
+    width: 100%;
 }
 
 @media (max-width: 768px) {
     .body {
-        width: 50%; /* Adjust width for smaller screens */
-        max-width: 50%; /* Ensure it doesn't exceed the screen width */
+        width: 100% ;
+        overflow-x: hidden;
     }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#envelopes, #pop-out-from-envelope, #info {
+    max-width: 800px;
+    width: 100%;
 }
 
 p {
     font-family: Awelier, serif;
-    font-size: 25px;
+    font-size: 18px; /*25*/
 }
 
 h1 {
     font-family: Golden-State-Bold, serif;
-    font-size: 70px;
+    font-size: 40px; /*70*/
 }
 
 h2 {
     font-family: Golden-State, serif;
-    font-size: 40px;
+    font-size: 30px; /*40*/
     margin: 0;
     padding: 0;
 }
 
 h3 {
     font-family: Quaylike, serif;
-    font-size: 25px;
+    font-size: 20px; /*25*/
     margin: 1;
     padding: 1;
 }
 
 iframe {
     width: 75%;
-    height: 25%
+    height: 25%;
 }
 
 
@@ -180,8 +189,9 @@ button {
 }
 
 #stoop-graphic {
-    width: 500px;
-    height: 500px;
+    width: 100%; /*500px*/
+    max-width: 100%;
+    height: auto;
     animation: stoopGraphicAnimation 3s steps(1,end) infinite;
 }
 
