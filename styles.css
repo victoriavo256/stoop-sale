@@ -18,8 +18,8 @@ body {
         overflow-x: hidden;
     }
     #stoop-graphic {
-        width:250px;
-        height:250px;
+        width:50px;
+        height:50px;
         margin: 0;
     }
 }
@@ -36,24 +36,24 @@ img {
 
 p {
     font-family: Awelier, serif;
-    font-size: 18px; /*25*/
+    font-size: 18px;
 }
 
 h1 {
     font-family: Golden-State-Bold, serif;
-    font-size: 60px; /*40*/
+    font-size: 60px;
 }
 
 h2 {
     font-family: Golden-State, serif;
-    font-size: 40px; /*30*/
+    font-size: 40px;
     margin: 0;
     padding: 0;
 }
 
 h3 {
     font-family: Quaylike, serif;
-    font-size: 25px; /*20*/
+    font-size: 25px;
     margin: 1;
     padding: 1;
 }
