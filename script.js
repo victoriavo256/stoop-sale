@@ -11,6 +11,9 @@ envelopeButton.addEventListener("click", () => {
     // hide closed envelope
     envelopeButton.classList.add('hidden');
 
+    // hide click-me text
+    document.getElementById("click-me").classList.add('hidden');
+
     // show opened envelope
     document.getElementById("opened-envelope").classList.remove('hidden');
 

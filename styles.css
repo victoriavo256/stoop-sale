@@ -9,6 +9,15 @@ body {
     height: 100vh;
     margin: 0;
     text-align: center;
+    width: 100%; 
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .your-element {
+        width: 100%; /* Adjust width for smaller screens */
+        max-width: 100%; /* Ensure it doesn't exceed the screen width */
+    }
 }
 
 p {
@@ -89,6 +98,11 @@ button {
 
 /*************** style rules for starting screen (before clicking the envelope) ***************/
 
+#click-me {
+    position: absolute;
+    top: 60%;
+}
+
 @keyframes idleShake {
     0%  { transform: rotate(0deg); }
     25% { transform: rotate(-10deg); }
@@ -101,6 +115,7 @@ button {
     background: none;
     border: none;
     animation: idleShake 1s infinite;
+    position: relative;
 }
 
 @keyframes openEnvelope {
