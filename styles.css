@@ -177,3 +177,9 @@ button {
     background: none;
 }
 
+#share-button-alert {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
