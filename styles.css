@@ -18,8 +18,13 @@ body {
         overflow-x: hidden;
     }
     #stoop-graphic {
-        width:50px;
-        height:50px;
+        width:250px;
+        height:250px;
+        margin: 0 auto;
+    }
+    #collage-box {
+        width: 250px;
+        height: auto;
         margin: 0 auto;
     }
 }
