@@ -26,7 +26,7 @@ button {
 
 /*************** style rule for google map API ***************/
 
-gmp-map {
+#map {
     height: 100%;
 }
 

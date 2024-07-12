@@ -1,3 +1,37 @@
+// fetch the environment variable from vercel's runtime configuration
+const apiKey = process.env.GOOGLE_MAPS_API_KEY;
+
+// dynamically load google maps API
+function loadGoogleMaps() {
+    const script = document.createElement('script');
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&callback=initMap&libraries=maps,marker&v=beta`;
+    script.defer = true;
+    script.async = true;
+    document.head.appendChild(script);
+}
+
+// initialize google maps after the API script has loaded
+function initMap() {
+    // Define map options
+    const mapOptions = {
+        center: { lat: 40.67951583862305, lng: -73.9972915649414 },
+        zoom: 14
+    };
+
+    // Create the map
+    const map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+    // Add a marker
+    const marker = new google.maps.Marker({
+        position: { lat: 40.67951583862305, lng: -73.9972915649414 },
+        map: map,
+        title: 'Stoop Sale Location'
+    });
+}
+
+// load google maps API when the window loads
+window.addEventListener('load', loadGoogleMaps);
+
 // when "closed envelope" image is clicked, "open envelope" image is revealed 
 // and text + images pop out to fill the screen with an invite to the stoop sale
 
