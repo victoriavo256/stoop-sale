@@ -209,7 +209,7 @@ button {
     animation: stoopGraphicAnimation 3s steps(1,end) infinite;
     margin: 0 auto; /* center horizontally */
     background-repeat: no-repeat; 
-    background-size: cover;
+    background-size: contain;
     background-position: center;
 }
 
