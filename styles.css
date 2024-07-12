@@ -199,8 +199,8 @@ button {
 }
 
 @keyframes stoopGraphicAnimation {
-    0%, 100% { background-image: url('images/stoop1.png') }
-    50% { background-image: url('images/stoop2.png') }
+    0%, 100% { background-image: var(--background-image1) }
+    50% { background-image: var(--background-image2) }
 }
 
 #stoop-graphic {
