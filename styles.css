@@ -1,3 +1,7 @@
+ gmp-map {
+    height: 100%;
+  }
+
 body {
     background-image: url('images/paper-bg.jpg');
     background-repeat: repeat;
