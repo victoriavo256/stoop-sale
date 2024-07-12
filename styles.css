@@ -133,6 +133,11 @@ button {
     border: 3px black solid;
     position: absolute;
     font-size: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding: 0px;
+    height: auto;
 }
 
 @keyframes zoomOutFromCenter {
@@ -147,7 +152,7 @@ button {
     position: relative;
 }
 
-#pop-out-from-envelope p,
+#pop-out-from-envelope h3,
 #pop-out-from-envelope h2,
 #pop-out-from-envelope h1 {
     margin: -1; 
@@ -163,68 +168,6 @@ button {
     width: 500px;
     height: 500px;
     animation: stoopGraphicAnimation 3s steps(1,end) infinite;
-}
-
-/*************** style rules for interactive collage ***************/
-
-#collage-container {
-    width: 80%;
-    height: 500px;
-    border: none;
-    position: relative;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.collage-item {
-    position: absolute;
-    cursor: move;
-}
-
-#heels {
-    top: 50px;
-    left: 375px;
-}
-
-#sneakers {
-    top: 75px;
-    left: 190px;
-}
-
-#cooking-pot {
-    top: 75px;
-    left: 40px;
-
-}
-
-#shirt {
-    top: 150px;
-    left: 25px;
-}
-
-#shorts {
-    top: 120px;
-    left: 340px;
-}
-
-#russian-doll {
-    top: 235px;
-    left: 75px;
-}
-
-#ballerina {
-    top: 75px;
-    left: 165px;
-}
-
-#watch {
-    top: 50px;
-    left: 265px;
-}
-
-#pendant {
-    top: 50px;
-    left: 55px;
 }
 
 /*************** style rules for social media buttons ***************/
