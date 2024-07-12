@@ -1,11 +1,19 @@
 My submission to the [CodeDex](https://codedex.io/) 2024 Summer Hackathon! 
+
 (Took place from 7/11/24 12pm EST to 7/12/24 12pm EST.)
+
 Out of 3 available tracks, I chose to do the 2nd one which was a web dev track.
+
 The prompt was to create an interactive invitation website for a stoop sale (similar to a garage or yard sale) being hosted by two friends, Chelsea and Lil, in Brooklyn. Here's the [original prompt post](https://www.instagram.com/reel/C9LOM5NuACA/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==). The requirements were as follows:
+
 ⏰ Include a date and time
+
 🌏 Include a place with a map API
+
 🖐 Make it interactive
+
 🔗 Shareability
+
 🌷 Good vibes!
 
 
@@ -17,11 +25,17 @@ I had a lot of fun brainstorming for this prompt, but it was a very humbling exp
 FEATURES ⭐
 
 💌 an interactive landing page that makes the website experience feel like opening a personal invitation
+
 🌏 an embedded interactive Google Maps image so you know exactly where to go
+
 ⏰ a countdown timer to the date and time of the event
+
 🗣 5 social share URLs so you can invite your friends and spread the word about this event
+
 🎶 jazzy bgm from pixabay that sets the mood
+
 💻 some css animations to add extra visual interest, and also bc they're just fun to code
+
 🎨 some fun self-made collages/graphics!
 
 
