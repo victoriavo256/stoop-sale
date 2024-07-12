@@ -24,11 +24,27 @@ button {
     display: none;
 }
 
+/*************** style rule for custom fonts (via dafont.com) ***************/
+
+@font-face {
+    font-family: 'Golden-State';
+    src: url('fonts/GoldenStateSerifPERSONAL-Italic.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Quaylike';
+    src: url('fonts/Quaylike.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*************** style rule for google map API ***************/
 
-gmp-map {
+/*gmp-map {
     height: 100%;
-}
+}*/
 
 /*************** style rules for starting screen (before clicking the envelope) ***************/
 @keyframes idleShake {

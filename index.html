@@ -4,8 +4,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>✨Stoop Sale✨</title>
     <link href="styles.css" rel="stylesheet" />
-    <script async src="https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_MAPS_API_KEY}&callback=console.debug&libraries=maps,marker&v=beta">
-    </script>
+    <!--<script async src="https://maps.googleapis.com/maps/api/js?key=${process.env.GOOGLE_MAPS_API_KEY}&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>-->
 </head>
 <body>
     <div id="envelopes">
@@ -29,14 +29,26 @@
         <p class="fadeInViewPort">Street Address here</p>
 
         <!--Google Maps API!-->
-        <gmp-map center="40.67951583862305,-73.9972915649414" zoom="14" map-id="DEMO_MAP_ID">
+        <!--<gmp-map center="40.67951583862305,-73.9972915649414" zoom="14" map-id="DEMO_MAP_ID">
             <gmp-advanced-marker position="40.67951583862305,-73.9972915649414" title="My location"></gmp-advanced-marker>
-        </gmp-map>
+        </gmp-map>-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6051.496714754825!2d-73.99985572483514!3d40.67951323960516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a585c181957%3A0x50e694b8c1ef75b2!2s2nd%20Pl%20%26%20Court%20St%2C%20Brooklyn%2C%20NY%2011231!5e0!3m2!1sen!2sus!4v1720747065429!5m2!1sen!2sus" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
         <p class="fadeInViewPort">Interactive Collage here</p>
         <p class="fadeInViewPort">Share to Socials here</p>
         <p class="fadeInViewPort">Hope to see you there! xo Chelsea & Lil</p>
+
+        <!-- buttons to share to social media -->
+        <div class="share-buttons">
+            <a href="#" id="instagram" class="share-button"><img src="images/instagram.png" width="75"></a>
+            <a href="#" id="twitterx" class="share-button"><img src="images/twitterx.png" width="75"></a>
+            <a href="#" id="facebook" class="share-button"><img src="images/facebook.png" width="75"></a>
+            <a href="#" id="gmail" class="share-button"><img src="images/gmail.png" width="75"></a>
+            <a href="#" id="sharelink" class="share-button"><img src="images/sharelink.png" width="75"></a>
+        </div>
     </div>
+
+    
     
     <script src="script.js"></script>
 </body>
