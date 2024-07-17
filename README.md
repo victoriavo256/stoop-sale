@@ -1,5 +1,7 @@
 My submission to the [CodeDex](https://codedex.io/) 2024 Summer Hackathon! 🌞
 
+🥈 It won 2nd place out of 73 other submissions! 🎉🎉🎉
+
 (Took place from 7/11/24 12pm EST to 7/12/24 12pm EST.)
 
 Out of 3 available tracks, I chose to do the 2nd one which was a web dev track.
